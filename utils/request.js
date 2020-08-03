@@ -72,10 +72,11 @@ function request(option) {
         //   url: `/pages/index/index`
         // })
         // user.showToast({title: `错误: ${data.message}`})
-        user.getToken()
-        setTimeout(()=>{
-          request(option)
-        },500)
+        // user.getToken()
+        // setTimeout(()=>{
+        //   request(option)
+        // },500)
+        // resolve(statusCode)
         return
       } else {
         user.showToast({title: `错误: ${data.message}`})
