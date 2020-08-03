@@ -3,10 +3,6 @@ import {user} from './../server/index'
 import storage from './storage'
 let {updataUserinfo,userLogin} = user
 module.exports = {
-  //----------------用户信息--------------------------------
-  userInfo:{
-    
-  },
 //---------------- 请求封住--------------------------------
   //用户授权提交信息  
   userAuthor(e) {

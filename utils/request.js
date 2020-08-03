@@ -2,7 +2,7 @@ import Config from './config'
 import storage from './storage'
 import user from './user'
 // 接口初始化
-function request(url, options) {
+function getOptions(url, options) {
   let loading = null
   let { method, body } = options
   if (!url.indexOf('https://') > -1 || !url.indexOf('http://') > -1) {
@@ -54,8 +54,10 @@ function request(url, options) {
       title: '加载中'
     })
   }, 800)
+  request(option)
+}
 
-  // console.log(`option:${JSON.stringify(option)}`)
+function request(option) {
   return new Promise((resolve, reject) => {
     wx.request(option).then(res => {
       const { statusCode, data } = res
@@ -71,6 +73,9 @@ function request(url, options) {
         // })
         // user.showToast({title: `错误: ${data.message}`})
         user.getToken()
+        setTimeout(()=>{
+          request(option)
+        },500)
         return
       } else {
         user.showToast({title: `错误: ${data.message}`})
@@ -81,15 +86,15 @@ function request(url, options) {
 }
 
 export function requestGet(url, body) {
-  return request(url, { method: 'GET', body })
+  return getOptions(url, { method: 'GET', body })
 }
 export function requestDelete(url, body) {
-  return request(url, { method: 'DELETE',body })
+  return getOptions(url, { method: 'DELETE',body })
 }
 export function requestPost(url, body) {
-  return request(url, { method: 'POST', body })
+  return getOptions(url, { method: 'POST', body })
 }
 export function requestPut(url, body) {
-  return request(url, { method: 'PUT', body })
+  return getOptions(url, { method: 'PUT', body })
 }
 

@@ -33,7 +33,9 @@ App({
     storage,
     // api接口
     server,
-    // 用户信息
+    // 用户常用方法
     user,
+    // 用户信息
+    userInfo:{},
   }
 })
