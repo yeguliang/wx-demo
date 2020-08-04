@@ -28,14 +28,14 @@ App({
     // 小程序发生脚本错误或 API 调用报错时触发。也可以使用 wx.onError 绑定监听。
     console.log(msg)
   },
+   // 本地储存
+   $storage:storage,
+   // api接口
+   $server:server,
+   // 用户常用方法
+   $user:user,
+   // 用户信息
   globalData:{
-    // 本地储存
-    storage,
-    // api接口
-    server,
-    // 用户常用方法
-    user,
-    // 用户信息
     userInfo:{},
   }
 })

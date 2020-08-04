@@ -1,0 +1,43 @@
+.get-user-info-win {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 199;
+    /* border: 1px solid red; */
+  }
+  .get-user-info {
+    width: 600rpx;
+    height: 350rpx;
+    background-color: #f7f7ed;
+    border-radius: 10rpx;
+    position: relative;
+  }
+  .get-user-info .get-tip{
+    font-size: 36rpx;
+    color: #333;
+    text-align: center;
+    line-height: 90rpx;
+  }
+  .get-user-info .get-tip-text {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 28rpx;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 30rpx;
+    white-space: pre-wrap;
+  }
+  .get-user-info .btn-get-info {
+    width: 80%;
+    height: 68rpx;
+    background-color: #d70c19;
+    line-height: 68rpx;
+    color: #fff;
+    margin-top: 40rpx;
+  }

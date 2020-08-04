@@ -34,11 +34,9 @@ Component({
       })
     },
     // 内部方法建议以下划线开头
-    _myPrivateMethod: function(){
+    _bindGetUserInfo(){
+      app.$user.editUserInfo()
     },
-    _propertyChange: function(newVal, oldVal) {
-
-    }
   }
 
 })

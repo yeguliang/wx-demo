@@ -1,0 +1,7 @@
+<view  class="get-user-info-win">
+	<view class="get-user-info">
+		<view class="get-tip">提示</view>
+		<view class="get-tip-text">小茉您的用户信息，以便确认您的身份，请确认授权！</view>
+		<button class="btn-get-info" open-type="getUserInfo" bindgetuserinfo="_bindGetUserInfo">确认授权</button>
+	</view>
+</view>
