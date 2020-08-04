@@ -1,6 +1,7 @@
 import storage from './utils/storage'
 import server from './server/index'
 import user from './utils/user'
+import REGEXP from './utils/RegExp'
 App({
   onLaunch (options) {
     // 手机信息
@@ -34,6 +35,8 @@ App({
    $server:server,
    // 用户常用方法
    $user:user,
+   //常用的正则
+   $RegExp:REGEXP,
    // 用户信息
   globalData:{
     userInfo:{},
