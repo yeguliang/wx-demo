@@ -1,4 +1,4 @@
-<view class="item-box">
+<view class="item-box" catchtouchmove="_stopMove">
 	<view class="mask" style=" opacity:{{propOpacity}}">
 	</view>
 	<view class="content">

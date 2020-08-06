@@ -38,6 +38,9 @@ Component({
     // 内部方法建议以下划线开头
     _showOpenModel(){
 			this.triggerEvent('closeModel')
+    },
+    _stopMove(){
+			return
 		}
   }
 
