@@ -3,10 +3,13 @@ Page({
   data: {
     text: "This is page data."
   },
-  onLoad: function(options) {
-    // Do some initialize when page load.
-    // 在页面加载时进行一些初始化。
+  onLoaded: function(options) {
+    // 封装后
   },
+  // onLoad: function(options) {
+  //   // Do some initialize when page load.
+  //   // 在页面加载时进行一些初始化。
+  // },
   onShow: function() {
     // Do something when page show.
     // 当页面显示时做些什么。

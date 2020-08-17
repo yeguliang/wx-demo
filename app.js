@@ -2,6 +2,8 @@ import storage from './utils/storage'
 import server from './server/index'
 import user from './utils/user'
 import REGEXP from './utils/RegExp'
+require('./page-extend')
+
 App({
   onLaunch (options) {
     // 手机信息
